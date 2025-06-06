@@ -1,9 +1,9 @@
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "2.0.20"
 }
 
 group = "io.violabs"
-version = "1.0-SNAPSHOT"
+version = "1.0.0-SNAPSHOT"
 
 allprojects {
     group = "io.violabs"

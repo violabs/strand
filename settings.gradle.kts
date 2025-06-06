@@ -13,5 +13,12 @@ pluginManagement {
 
 rootProject.name = "strand"
 
-include("threads")
-include("integrationTests")
+include(
+    "threads",
+    "integrationTests",
+    "webclient",
+    "webclient:blocking-client",
+    "webclient:nonblocking-client",
+    "webclient:server",
+    "webclient:shared",
+)

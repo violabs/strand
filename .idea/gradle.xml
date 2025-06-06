@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -7,8 +8,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/unitTest" />
+            <option value="$PROJECT_DIR$/integrationTests" />
+            <option value="$PROJECT_DIR$/threads" />
+            <option value="$PROJECT_DIR$/webclient" />
+            <option value="$PROJECT_DIR$/webclient/blocking-client" />
+            <option value="$PROJECT_DIR$/webclient/nonblocking-client" />
+            <option value="$PROJECT_DIR$/webclient/server" />
+            <option value="$PROJECT_DIR$/webclient/shared" />
           </set>
         </option>
       </GradleProjectSettings>

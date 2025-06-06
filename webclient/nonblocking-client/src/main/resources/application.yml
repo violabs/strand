@@ -1,0 +1,15 @@
+server:
+  port: 8082
+  tomcat:
+    threads:
+      max: 10  # Same small thread pool to show the difference
+
+logging:
+  level:
+    io.violabs.webclient.client: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,threaddump

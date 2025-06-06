@@ -1,0 +1,158 @@
+[versions]
+aspectjWeaver = "1.9.22"
+auth0 = "3.18.2"
+
+caffiene = "3.1.8"
+commonsIo = "2.16.1"
+
+detekt = "1.23.6"
+dokka = "1.9.20"
+
+jacksonKotlin = "2.17.1"
+jakartaPlatform = "11.0.0-M3"
+jakartaValidation = "3.1.0"
+junit = "5.10.3"
+
+kotlin = "2.0.0-Beta5"
+kotlinxCoroutines = "1.9.0-RC"
+kotlinxSerialization = "1.7.1"
+kover = "0.7.6"
+ktorClient = "3.0.0-beta-1"
+
+logging = "4.0.0-beta-2"
+
+mockk = "1.13.11"
+mockkSpring = "4.0.2"
+
+#   val nettyResolver = libs.nettyResolver.get()
+#	val dependency = "${nettyResolver.module}:${nettyResolver.version}:osx-aarch_64"
+nettyResolver = "4.2.0.Alpha2" # add qualifier like `:osx-aarch_64`
+nexusPublishPlugin = "1.0.0"
+
+openApiGenerator = "7.2.0"
+
+postgresql = "42.7.3"
+postgresqlR2dbc = "1.0.4.RELEASE"
+
+reactorKotlinExtensions = "1.2.2"
+reactorTest = "3.6.7"
+
+slf4j = "2.1.0-alpha1"
+snakeYaml = "2.2"
+springBoot = "3.3.1"
+springCloudStarter = "4.1.3"
+springDependencyManagement = "1.1.5"
+springDocsWebFlux = "2.5.0"
+
+violabsGeordiUnitSim = "1.0.12"
+
+zip4j = "2.11.5"
+
+[libraries]
+aspectjWeaver = { module = "org.aspectj:aspectjweaver", version.ref = "aspectjWeaver" }
+auth0 = { module = "com.auth0:java-jwt", version.ref = "auth0" }
+
+caffiene = { module = "com.github.ben-manes.caffeine:caffeine", version.ref = "caffiene" }
+commonsIo = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+
+detekt = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
+dokka = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
+
+jacksonKotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonKotlin" }
+jakartaPlatform = { module = "jakarta.platform:jakarta.jakartaee-api", version.ref = "jakartaPlatform" }
+jakartaValidation = { module = "jakarta.validation:jakarta.validation-api", version.ref = "jakartaValidation" }
+junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+
+kotlinxCoroutinesCore = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinxCoroutinesReactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor", version.ref = "kotlinxCoroutines" }
+kotlinxSerialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+ktorClientCio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClient" }
+ktorClientContentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClient" }
+ktorClientCore = { module = "io.ktor:ktor-client-core", version.ref = "ktorClient" }
+ktorClientJson = { module = "io.ktor:ktor-client-json", version.ref = "ktorClient" }
+ktorClientLogging = { module = "io.ktor:ktor-client-logging", version.ref = "ktorClient" }
+ktorClientOkhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktorClient" }
+ktorClientSerializer = { module = "io.ktor:ktor-client-serialization", version.ref = "ktorClient" }
+ktorClientSerializationKotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClient" }
+
+logging = { module = "io.github.microutils:kotlin-logging", version.ref = "logging" }
+
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+mockkSpring = { module = "com.ninja-squad:springmockk", version.ref = "mockkSpring" }
+
+nettyResolver = { module = "io.netty:netty-resolver-dns-native-macos", version.ref = "nettyResolver" }
+nexusPublishPlugin = { module = "io.github.gradle-nexus.publish-plugin:publish-plugin", version.ref = "nexusPublishPlugin" }
+
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+postgresqlR2dbc = { module = "org.postgresql:r2dbc-postgresql", version.ref = "postgresqlR2dbc" }
+
+reactorKotlinExtensions = { module = "io.projectreactor.kotlin:reactor-kotlin-extensions", version.ref = "reactorKotlinExtensions" }
+reactorTest = { module = "io.projectreactor:reactor-test", version.ref = "reactorTest" }
+
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+snakeYaml = { module = "org.yaml:snakeyaml", version.ref = "snakeYaml" }
+springCloudStarter = { module = "org.springframework.cloud:spring-cloud-starter-bootstrap", version.ref = "springCloudStarter" }
+springDocsWebFlux = { module = "org.springdoc:springdoc-openapi-starter-webflux-ui", version.ref = "springDocsWebFlux" }
+springStarterCache = { module = "org.springframework.boot:spring-boot-starter-cache", version.ref = "springBoot" }
+springStarterTest = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBoot" }
+springStarterWebFlux = { module = "org.springframework.boot:spring-boot-starter-webflux", version.ref = "springBoot" }
+
+violabsGeordiUnitSim = { module = "io.violabs.geordi:unit-sim", version.ref = "violabsGeordiUnitSim" }
+
+zip4j = { module = "net.lingala.zip4j:zip4j", version.ref = "zip4j" }
+
+[bundles]
+basicSetup = [
+    "logging"
+]
+basicSpringTesting = [
+    "mockkSpring",
+    "mockk",
+    "violabsGeordiUnitSim",
+    "springStarterTest",
+    "kotlinxSerialization"
+]
+basicSpringWebFluxTesting = [
+    "mockkSpring",
+    "reactorTest",
+    "mockk",
+    "violabsGeordiUnitSim",
+    "springStarterTest",
+    "kotlinxSerialization"
+]
+basicTesting = [
+    "mockk",
+    "violabsGeordiUnitSim"
+]
+
+kotlinCoroutines = [
+    "kotlinxCoroutinesCore",
+    "kotlinxCoroutinesReactor"
+]
+ktorClient = [
+    "ktorClientCio",
+    "ktorClientContentNegotiation",
+    "ktorClientCore",
+    "ktorClientJson",
+    "ktorClientLogging",
+    "ktorClientOkhttp",
+    "ktorClientSerializer",
+    "ktorClientSerializationKotlinxJson"
+]
+reactivePostgres = [ "postgresqlR2dbc", "postgresql" ]
+reactorKotlin = [ "reactorKotlinExtensions", "kotlinxCoroutinesCore", "kotlinxCoroutinesReactor" ]
+standardTesting = [ "junitJupiterApi", "junitJupiterEngine", "mockk", "violabsGeordiUnitSim" ]
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+
+# https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-gradle-plugin/README.adoc
+openApiGenerator = { id = "org.openapi.generator", version.ref = "openApiGenerator" }
+
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
+springDependencyManagement = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }

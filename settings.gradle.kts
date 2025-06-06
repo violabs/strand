@@ -1,7 +1,17 @@
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+pluginManagement {
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/violabs/public-libs")
+            credentials {
+                username = ""
+                password = ""
+            }
+        }
+        mavenCentral()
+    }
 }
-rootProject.name = "rename-me"
 
-include("core")
+rootProject.name = "strand"
+
+include("threads")
 include("integrationTests")
